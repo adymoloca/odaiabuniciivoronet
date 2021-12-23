@@ -1,0 +1,25 @@
+{
+  "name": "odaiabuniciibe",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Adrian Moloca",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "mongoose": "^5.2.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "pdf-to-base64": "^1.0.3",
+    "pdfkit": "^0.13.0",
+    "qrcode": "^1.5.0",
+    "unique-names-generator": "^4.6.0"
+  }
+}
