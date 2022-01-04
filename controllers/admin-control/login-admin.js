@@ -14,6 +14,12 @@ const loginAdmin = async (req, res, next) => {
         adminID: adminID
     });
 
+    if(existingAdmin) {
+      return res.status(401).json({
+        message: 'No account found'
+      })
+    }
+
   } catch (error) {
       return res.json({
         error
