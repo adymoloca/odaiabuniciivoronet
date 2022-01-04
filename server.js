@@ -7,7 +7,7 @@ const { connect } = connection;
 
 import odaiaBunicii from './app/odaiaBunicii.js';
 
-connect('mongodb+srv://odaiabunicii:Voronet2022@cluster0.iiqxe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+connect('mongodb+srv://odaiabunicii:Voronet2022@odaiabuniciicluster.iiqxe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
