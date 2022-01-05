@@ -4,7 +4,7 @@ import uniqueValidator from 'mongoose-unique-validator';
 const { Schema, model } = pkg;
 
 const adminSchema = new Schema({
-        adminID: {type: String},
+        adminID: {type: String, default: 'Admin'},
 });
 
 adminSchema.plugin(uniqueValidator);
