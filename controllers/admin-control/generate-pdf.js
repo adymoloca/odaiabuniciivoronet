@@ -29,11 +29,13 @@ try {
         console.log(item);
     });
 
-    image('./image.png', {
+    matrita.image('image.png', {
         fit: [250, 300],
         align: 'center',
         valign: 'center'
       });
+
+    matrita.end();
 
     // console.log('here', preparedArray)
 
