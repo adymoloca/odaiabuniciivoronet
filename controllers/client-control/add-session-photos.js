@@ -12,7 +12,7 @@ const addSessionPhotos = async (req, res, next) => {
     existingClient = await Client.findOne({clientID: userID});
     
     if(existingClient) {
-      existingClient.sessionPhotos = [...sessionPhotos];
+      existingClient.sessionPhotos = [...existingClient.sessionPhotos, ...sessionPhotos];
     }
 
     await existingClient.save();
