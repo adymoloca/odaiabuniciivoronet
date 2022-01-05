@@ -10,9 +10,7 @@ const loginAdmin = async (req, res, next) => {
 
   try {
 
-    existingAdmin = await Admin.findOne({
-        adminID: adminID
-    });
+    existingAdmin = adminID == "Admin" ? adminID : null
 
     if(!existingAdmin) {
       return res.status(401).json({
